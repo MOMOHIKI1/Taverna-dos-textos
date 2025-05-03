@@ -1,0 +1,6 @@
+Este é um texto de exemplo para testar o visualizador da Taverna dos Textos.
+
+Ele contém algumas linhas
+e parágrafos para simular um pergaminho real.
+
+-- Fim do Pergaminho --

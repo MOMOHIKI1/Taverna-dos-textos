@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taverna dos Textos - RPG Sharer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Bem-vindo à Taverna dos Textos!</h1>
+            <p>Organize seus pergaminhos (.txt) e compartilhe suas histórias.</p>
+        </header>
+
+        <main>
+            <section id="gerenciador-sessoes">
+                <h2>Suas Estantes (Sessões)</h2>
+                <div id="sessoes-lista">
+                    <!-- Sessões e links serão carregados aqui pelo JavaScript -->
+                </div>
+                <div class="input-group">
+                    <input type="text" id="nome-nova-sessao" placeholder="Nome da nova estante">
+                    <button id="btn-criar-sessao">Criar Estante</button>
+                </div>
+            </section>
+
+            <hr class="rpg-divider">
+
+            <section id="mini-games-placeholder">
+                <h2>Salão de Jogos</h2>
+                <p>Relaxe um pouco com um jogo clássico:</p>
+                <iframe src="games/tetris/index.html" width="320" height="480" style="border: 2px solid var(--rpg-border); border-radius: 5px; display: block; margin: 15px auto;"></iframe>
+                <p style="text-align: center; font-size: 0.9em;">(Controles: Setas direcionais e Espaço)</p>
+            </section>
+        </main>
+
+        <footer>
+            <p>Feito com magia e código.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

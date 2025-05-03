@@ -1,0 +1,224 @@
+:root {
+    --rpg-background: #f5e1c3; /* Pergaminho claro */
+    --rpg-text: #4a2e1a; /* Marrom escuro texto */
+    --rpg-border: #8b4513; /* Marrom madeira borda */
+    --rpg-accent: #b8860b; /* Dourado escuro */
+    --rpg-header-bg: #d2b48c; /* Tan, madeira clara */
+    --rpg-button-bg: #8b4513;
+    --rpg-button-text: #f5e1c3;
+    --rpg-button-hover-bg: #a0522d;
+    --rpg-link-color: #8b4513;
+    --rpg-link-hover-color: #b8860b;
+}
+
+body {
+    font-family: 'Times New Roman', serif; /* Fonte serifada clássica */
+    background-color: var(--rpg-background);
+    color: var(--rpg-text);
+    margin: 0;
+    padding: 20px;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><path d="M0,0 L100,100 M100,0 L0,100" stroke="rgba(139, 69, 19, 0.1)" stroke-width="1"/></svg>'); /* Textura sutil */
+}
+
+.container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 30px;
+    background-color: rgba(245, 225, 195, 0.85); /* Fundo levemente transparente */
+    border: 5px solid var(--rpg-border);
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    border-image: url('data:image/svg+xml;utf8,<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><style>rect{fill:transparent;stroke:%238b4513;stroke-width:10;}</style><rect width="100" height="100"/></svg>') 10 stretch;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 3px double var(--rpg-border);
+}
+
+header h1 {
+    font-family: 'Papyrus', fantasy; /* Fonte temática */
+    color: var(--rpg-border);
+    font-size: 2.8em;
+    margin-bottom: 5px;
+}
+
+main section {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: rgba(245, 230, 205, 0.9);
+    border: 1px dashed var(--rpg-accent);
+    border-radius: 5px;
+}
+
+main h2 {
+    font-family: 'Papyrus', fantasy;
+    color: var(--rpg-border);
+    border-bottom: 1px solid var(--rpg-accent);
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+.input-group {
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+}
+
+input[type="text"], input[type="url"] {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid var(--rpg-border);
+    border-radius: 3px;
+    background-color: #fffaf0; /* Branco antigo */
+    color: var(--rpg-text);
+}
+
+button {
+    padding: 10px 15px;
+    background-color: var(--rpg-button-bg);
+    color: var(--rpg-button-text);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--rpg-button-hover-bg);
+}
+
+.rpg-divider {
+    border: none;
+    height: 5px;
+    background-image: linear-gradient(to right, transparent, var(--rpg-border), transparent);
+    margin: 40px 0;
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid var(--rpg-accent);
+    font-size: 0.9em;
+    color: var(--rpg-accent);
+}
+
+/* Estilos para a lista de sessões e links */
+#sessoes-lista .sessao {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid var(--rpg-accent);
+    border-radius: 5px;
+    background-color: rgba(245, 235, 215, 0.95);
+}
+
+#sessoes-lista .sessao h3 {
+    margin: 0 0 10px 0;
+    color: var(--rpg-border);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#sessoes-lista .sessao ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+#sessoes-lista .sessao li {
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    border-bottom: 1px dotted var(--rpg-accent);
+}
+
+#sessoes-lista .sessao li span {
+    flex-grow: 1;
+    margin-right: 10px;
+    word-break: break-all;
+}
+
+#sessoes-lista .sessao li button {
+    padding: 3px 8px;
+    font-size: 0.8em;
+    margin-left: 5px;
+}
+
+.link-actions button {
+    background: none;
+    border: none;
+    color: var(--rpg-link-color);
+    cursor: pointer;
+    font-size: 1em;
+    padding: 0 5px;
+}
+
+.link-actions button:hover {
+    color: var(--rpg-link-hover-color);
+}
+
+.delete-sessao-btn {
+    background-color: #dc3545; /* Vermelho perigo */
+}
+
+.delete-sessao-btn:hover {
+    background-color: #c82333;
+}
+
+/* Estilos do Visualizador */
+.viewer-container {
+    background-color: var(--rpg-background);
+    border-image: none; /* Sem borda de imagem complexa aqui */
+    border: 10px solid var(--rpg-border);
+}
+
+.pergaminho-content {
+    background-color: #fffaf0; /* Branco antigo */
+    padding: 25px;
+    border: 1px solid var(--rpg-accent);
+    min-height: 400px;
+    overflow-y: auto;
+    white-space: pre-wrap; /* Mantém quebras de linha e espaços */
+    word-wrap: break-word;
+    line-height: 1.6;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.pergaminho-content pre {
+    margin: 0;
+    font-family: 'Courier New', monospace; /* Fonte monoespaçada para TXT */
+    color: var(--rpg-text);
+}
+
+a {
+    color: var(--rpg-link-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--rpg-link-hover-color);
+    text-decoration: underline;
+}
+
+/* Responsividade básica */
+@media (max-width: 600px) {
+    .container {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    .input-group {
+        flex-direction: column;
+    }
+}
